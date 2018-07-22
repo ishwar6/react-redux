@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Notes from './components/notes';
 
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        ohkkk go for itdf
+        < Notes />
       </div>
     );
   }
