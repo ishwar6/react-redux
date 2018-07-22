@@ -12,7 +12,12 @@ export function itemsIsLoading(bool) {
         isLoading: bool
     };
 }
-
+export function itemsFetchDataSuccess(items) {
+    return {
+        type: 'ITEMS_FETCH_DATA_SUCCESS',
+        items
+    };
+}
 
 export function itemsFetchData(url) {
     return (dispatch) => {

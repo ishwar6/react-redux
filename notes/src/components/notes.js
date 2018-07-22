@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { itemsFetchData } from '../actions/items';
+
 class Notes extends Component {
   constructor() {
     super();
@@ -6,6 +9,8 @@ class Notes extends Component {
             items: [],
         };
     }
+
+
     fetchData(url) {
         this.setState({ isLoading: true });
         fetch(url)
